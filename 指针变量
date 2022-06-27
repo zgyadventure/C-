@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+	int a=10;                                     
+	int*p=&a;                                  //int*定义指针变量;p为地址;*p解引用地址，可获得地址p的内容 
+	printf("%p\n",p);
+	printf("%d",*p);
+	return 0;
+ } 
