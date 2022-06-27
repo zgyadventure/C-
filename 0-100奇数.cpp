@@ -6,7 +6,7 @@ int main()
 	 {
 	   if(i%2==1)
 	    {
-		printf("%d\n",i);                    //´òÓ¡0-100µÄÆæÊý 
+		printf("%d\n",i);                    
 	    }
 	    i++;
 	}
