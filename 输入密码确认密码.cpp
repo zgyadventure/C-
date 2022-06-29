@@ -2,18 +2,18 @@
 int main()
 {
 	char password[10]={0};
-	printf("输入密码:");
+	printf("杈撳叆瀵嗙爜:");
 	scanf("%s",password);
-	printf("密码二次确认\n");
+	printf("瀵嗙爜浜屾纭\n");
 	while (int ch=getchar()!='\n');
-	{                                   			//这里用循环不断读取密码以外的部分直到'\n'，防止第二次确认密码直接读取回车 导致任务失败. 
-		;
+	{                                   			//杩欓噷鐢ㄥ惊鐜笉鏂鍙栧瘑鐮佷互澶栫殑閮ㄥ垎鐩村埌'\n'锛岄槻姝㈢浜屾纭瀵嗙爜鐩存帴璇诲彇鍥炶溅 瀵艰嚧浠诲姟澶辫触. 
+		;						//scanf浠ョ┖鏍硷紝鍒惰〃绗︼紝鎹㈣绗︾瓑涓虹粨鏉熸爣蹇楋紝鎵�浠ユ湁鏃堕渶瑕佺敤鍒癵etchar鎺ュ彈杩欎簺瀛楃.
 	}
 	int password_2=getchar();
 	if(password_2=='y')
-	  printf("二次确认正确");
+	  printf("浜屾纭姝ｇ‘");
 	else
-	  printf("二次确认错误");
+	  printf("浜屾纭閿欒");
 	  return 0;
 	 
 	
