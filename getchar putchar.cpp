@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(){
 	int ch;
-	while ((ch=getchar())!=EOF)                 //getchar·ÅÔÚÑ­»·whileÀïºÍ·ÅÔÚÍâÃæÊÇ²»Í¬½á¹û£¬ÔÚÍâÃæ½«±ä³ÉÎŞÏŞÑ­»·. 
-	{											//ÕâÀïĞèÒªÊäÈëctrl+zÀ´½áÊø³ÌĞò,¼´ctrl+z=EOF 
-		putchar(ch);                                  
-	}
+	while ((ch=getchar())!=EOF)                 //getcharæ”¾åœ¨å¾ªç¯whileé‡Œå’Œæ”¾åœ¨å¤–é¢æ˜¯ä¸åŒç»“æœï¼Œåœ¨å¤–é¢å°†å˜æˆæ— é™å¾ªç¯. 
+	{											//è¿™é‡Œéœ€è¦è¾“å…¥ctrl+zæ¥ç»“æŸç¨‹åº,å³ctrl+z=EOF 
+		putchar(ch);                           //getcharå’Œputcharæœ€ç»ˆå¯¼å‡ºçš„éƒ½æ˜¯å­—ç¬¦
+	}                                              
 	
 	 return 0;
 }
