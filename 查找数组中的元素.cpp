@@ -8,12 +8,12 @@ int main()
 	{
 		if(arr[i]==7)
 		{
-			printf("okÏÂ±êÎª%d\n",i);
+			printf("okä¸‹æ ‡ä¸º%d\n",i);
 			break;
 		}
 	}
 	if(i>8)
-		printf("no,ÕÒ²»µ½");
+		printf("no,æ‰¾ä¸åˆ°");
 	return 0;
 	
 }
