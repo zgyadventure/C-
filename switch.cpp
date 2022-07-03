@@ -5,19 +5,19 @@ int main()
 	scanf("%d",&day);
 	switch(day)
 	{
-	case 1:                                               //ÕâÀï½«1-5£¬6-7·ÅÔÚÒ»Æğ£¬²»ÓÃÃ¿Ò»²½¶¼ÓÃbreakÌø³öÑ­»· 
-	case 2:
+	case 1:                                               //è¿™é‡Œå°†1-5ï¼Œ6-7æ”¾åœ¨ä¸€èµ·ï¼Œä¸ç”¨æ¯ä¸€æ­¥éƒ½ç”¨breakè·³å‡ºå¾ªç¯ 
+	case 2:							//æ³¨æ„åœ¨caseåé¢æ— breakæƒ…å†µä¸‹ï¼Œæ— è®ºå€¼å¯¹ä¸å¯¹åº”éƒ½æ‰§è¡Œ					
 	case 3:
 	case 4:
 	case 5:
-	  printf("¹¤×÷ÈÕ");
+	  printf("å·¥ä½œæ—¥");
 	  break;
 	case 6:
 	case 7:
-	  printf("ĞİÏ¢ÈÕ");
+	  printf("ä¼‘æ¯æ—¥");
 	  break;
 	default:
-	  printf("´íÎó");                                         //ÔÚswitchÖĞÏ°¹ßÊ¹ÓÃdefault½áÎ²»ò¿ªÍ· 
+	  printf("é”™è¯¯");                                         //åœ¨switchä¸­ä¹ æƒ¯ä½¿ç”¨defaultç»“å°¾æˆ–å¼€å¤´ 
 	  break;
 	}
 	return 0;
