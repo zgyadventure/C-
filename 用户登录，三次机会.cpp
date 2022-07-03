@@ -15,7 +15,7 @@ int main()
 		}
 		else
 		{
-			printf("密码错误");
+			printf("密码错误\n");
 		}
 	}
 	if(i==3)
