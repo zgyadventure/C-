@@ -8,14 +8,14 @@ int main()
 		if(year%4==0 && year%100!=0)
 		{
 			printf("%d\n",year);
-			count++;
-		}
+			count++;						//1.整除4不能整除100
+		}								//2.能整除400
 		else if(year%400==0)
 		{
 			printf("%d\n",year);
 			count++;
 		}
 	}
-	printf("һ��%d��",count);
+	printf("Ò»¹²%d¸ö",count);
 	return 0;
 }
