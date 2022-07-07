@@ -9,20 +9,24 @@ int game()
 	int a=rand()%10;
 	int b;
 	printf("请猜一个数字:");
-	scanf("%d",&b);
-	if(a==b)
+	while(a!=b)
 	{
-		printf("猜对了"); 
-		printf("%d",a);
+		scanf("%d",&b);
+		if(b>a)
+		{
+			printf("猜大了");
+		}
+		else if(b<a)
+		{
+			printf("猜小了");
+		}
+		else
+		{
+			printf("恭喜你！答对了");
+		}
 	}
-	else 
-	{
-		printf("猜错了");
-		printf("%d",a);
-	}
+	printf("正确答案是%d",a);
 }
-
-
 int main()
 {
 	int input;
