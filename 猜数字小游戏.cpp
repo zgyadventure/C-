@@ -8,43 +8,43 @@ int game()
 	srand((unsigned)time(NULL));
 	int a=rand()%10;
 	int b;
-	printf("Çë²ÂÒ»¸öÊı×Ö:");
+	printf("è¯·çŒœä¸€ä¸ªæ•°å­—:");
 	while(a!=b)
 	{
 		scanf("%d",&b);
 		if(b>a)
 		{
-			printf("²Â´óÁË");
+			printf("çŒœå¤§äº†");
 		}
 		else if(b<a)
 		{
-			printf("²ÂĞ¡ÁË");
+			printf("çŒœå°äº†");
 		}
 		else
 		{
-			printf("¹§Ï²Äã£¡´ğ¶ÔÁË");
+			printf("æ­å–œä½ ï¼ç­”å¯¹äº†");
 		}
 	}
-	printf("ÕıÈ·´ğ°¸ÊÇ%d",a);
+	printf("æ­£ç¡®ç­”æ¡ˆæ˜¯%d",a);
 }
 int main()
 {
 	int input;
-	printf("                                             ²ÂÊı×ÖÓÎÏ·\n\n\n\n\n\n\n");
-	printf("                                             1.¿ªÊ¼ÓÎÏ·\n");
-	printf("                                             2.ÍË³öÓÎÏ·\n");
+	printf("                                             çŒœæ•°å­—æ¸¸æˆ\n\n\n\n\n\n\n");
+	printf("                                             1.å¼€å§‹æ¸¸æˆ\n");
+	printf("                                             2.é€€å‡ºæ¸¸æˆ\n");
 	scanf("%d",&input);
 	system("cls");
 	if(input==1)
 	{
-		printf("½øÈëÓÎÏ·ÖĞ....."); 
-	    Sleep(2000);
+		printf("è¿›å…¥æ¸¸æˆä¸­....."); 
+	        Sleep(2000);
 		system("cls");
 		game();
 	}
 	else
 	{
-		printf("ÔÙ¼û");
+		printf("å†è§");
 	}
 	
 	return 0;
