@@ -11,7 +11,7 @@ int Fib(int n)
 		c=a+b;
 		n--;	
 	}
-	return c;
+	return c;						//比递归求更合理
 }
 int main()
 {
