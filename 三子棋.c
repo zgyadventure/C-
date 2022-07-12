@@ -8,7 +8,7 @@ void map(char arr[3][3], int row, int col)
 {
 	int i;
 	int j;
-	//µØÍ¼³õÊ¼»¯
+	//åœ°å›¾åˆå§‹åŒ–
 	for (i = 0; i < row; i++)
 	{
 		for (j = 0; j < col; j++)
@@ -22,7 +22,7 @@ void displayer_map(char arr[3][3], int row, int col)
 	int i;
 	int j;
 	for (i = 0; i < row; i++)
-	{   //´òÓ¡ÔªËØÄÇÒ»ĞĞ
+	{   //æ‰“å°å…ƒç´ é‚£ä¸€è¡Œ
 		for (j = 0; j < col; j++)
 		{
 			printf(" %c ", arr[i][j]);
@@ -32,7 +32,7 @@ void displayer_map(char arr[3][3], int row, int col)
 			}
 		}
 		printf("\n");
-		//´òÓ¡·Ö¸îÏßÄÇÒ»ĞĞ
+		//æ‰“å°åˆ†å‰²çº¿é‚£ä¸€è¡Œ
 		if (i < row - 1)
 		{
 			for (j = 0; j < col; j++)
@@ -81,7 +81,7 @@ void playermove(char arr[3][3])
 			break;
 		}
 		else
-			printf("ÄãÊÇÉµ±ÆÂğ£¬ÖØĞÂÂä×Ó\n");
+			printf("ä½ æ˜¯å‚»é€¼å—ï¼Œé‡æ–°è½å­\n");
 	}
 
 }
@@ -159,22 +159,22 @@ void game()
 	}
 	if (ret == '*')
 	{
-		printf("ÄãÓ®ÁË");
+		printf("ä½ èµ¢äº†");
 	}
 	else if (ret == '#')
 	{
-		printf("ÄãÊäÁËĞ¡À¬»ø");
+		printf("ä½ è¾“äº†å°åƒåœ¾");
 	}
 	else 
 	{
-		printf("Æ½¾Ö");
+		printf("å¹³å±€");
 	}
 }
 	void cover()
 	{
-		printf("							Èı×ÓÆåÓÎÏ·\n\n\n\n\n\n");
-		printf("							1.½øÈëÓÎÏ·\n");
-		printf("							2.ÍË³öÓÎÏ·\n");
+		printf("							ä¸‰å­æ£‹æ¸¸æˆ\n\n\n\n\n\n");
+		printf("							1.è¿›å…¥æ¸¸æˆ\n");
+		printf("							2.é€€å‡ºæ¸¸æˆ\n");
 	}
 	void test()
 	{
@@ -187,16 +187,16 @@ void game()
 			{
 			case 1:
 				system("cls");
-				printf("ÓÎÏ·¼ÓÔØÖĞ.....");
+				printf("æ¸¸æˆåŠ è½½ä¸­.....");
 				Sleep(2000);
 				system("cls");
 				game();
 				break;
 			case 2:
-				printf("ÍË³öÓÎÏ·³É¹¦\n");
+				printf("é€€å‡ºæ¸¸æˆæˆåŠŸ\n");
 				break;
 			default:
-				printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
+				printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 				break;
 			}
 		} while (input);
