@@ -31,7 +31,7 @@ void lint(struct ea* zz)
 }
 void add(struct ea *zz)
 {
-	if (zz->size >=1000)
+	if (zz->size >=200)
 	{
 		printf("通讯录已满，无法录入");
 	}
@@ -64,7 +64,7 @@ void show(struct ea* zz)
 		for (i = 0; i < zz->size; i++)
 		{
 			printf("%-10s\t%-5s\t%-4d\t%-11s\t%-10s\n", zz->arr[i].name, zz->arr[i].gen, zz->arr[i].age, zz->arr[i].tel, zz->arr[i].addr);
-		}
+		};
 	}
 }
 void del(struct ea* zz)
@@ -93,6 +93,7 @@ void del(struct ea* zz)
 		}
 	}
 	zz->size--;
+	printf("删除成功");
 }
 void menu()
 {
@@ -113,11 +114,10 @@ void option()
 		switch (input)
 		{
 		case Add:
-			lint(&zz);
 			add(&zz);
 			break;
 		case Del:
-			//delete();
+			del(&zz);
 			break;
 		case Search:
 			//search();
