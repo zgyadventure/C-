@@ -95,6 +95,29 @@ void del(struct ea* zz)
 	zz->size--;
 	printf("删除成功");
 }
+void search(struct ea* zz)
+{
+	char name[5];
+	int i;
+	printf("你要查找的联系人:");
+	scanf("%s",name);
+	for(i=0;i<zz->size;i++)
+	{
+		if(0==strcmp(name,zz->arr[i].name))
+		{
+			break;
+		}
+	}
+	if(i<zz->size)
+	{
+		printf("%-10s\t%-5s\t%-5s\t%-11s\t%-10s\n", "姓名", "性别", "年龄", "电话号码", "地址");
+		printf("%-10s\t%-5s\t%-4d\t%-11s\t%-10s\n", zz->arr[i].name, zz->arr[i].gen, zz->arr[i].age, zz->arr[i].tel, zz->arr[i].addr);
+	}
+}
+void modify(struct ea* zz)
+{
+	
+}
 void menu()
 {
 	
@@ -120,7 +143,7 @@ void option()
 			del(&zz);
 			break;
 		case Search:
-			//search();
+			search(&zz);
 			break;
 		case Modify:
 			//modify();
