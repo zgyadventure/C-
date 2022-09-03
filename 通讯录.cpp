@@ -108,6 +108,10 @@ void search(struct ea* zz)
 			break;
 		}
 	}
+	if(i==zz->size)
+	{
+		printf("没有该联系人");
+	}
 	if(i<zz->size)
 	{
 		printf("%-10s\t%-5s\t%-5s\t%-11s\t%-10s\n", "姓名", "性别", "年龄", "电话号码", "地址");
@@ -116,6 +120,34 @@ void search(struct ea* zz)
 }
 void modify(struct ea* zz)
 {
+	char name[5];
+	int i;
+	printf("请输入你要修改的联系人");
+	scanf("%s",name);
+	for(i=0;i<zz->size;i++)
+	{
+		if(0==strcmp(name,zz->arr[i].name))
+		{
+			printf("%-10s\t%-5s\t%-5s\t%-11s\t%-10s\n", "姓名", "性别", "年龄", "电话号码", "地址");
+			printf("%-10s\t%-5s\t%-4d\t%-11s\t%-10s\n", zz->arr[i].name, zz->arr[i].gen, zz->arr[i].age, zz->arr[i].tel, zz->arr[i].addr);
+			printf("请输入姓名:");
+			scanf("%s", zz->arr[i].name );
+			printf("请输入性别:");
+			scanf("%s", zz->arr[i].gen);
+			printf("请输入年龄:");
+			scanf("%d", &zz->arr[i].age );
+			printf("请输入电话号码:");
+			scanf("%s", zz->arr[i].tel);
+			printf("请输入地址：");
+			scanf("%s", zz->arr[i].addr);
+			printf("修改成功\n\n");	
+			break;
+		}
+	}
+	if(i==zz->size)
+	{
+		printf("没有该联系人");
+	}
 	
 }
 void menu()
@@ -146,7 +178,7 @@ void option()
 			search(&zz);
 			break;
 		case Modify:
-			//modify();
+			modify(&zz);
 			break;
 		case Show:
 			show(&zz);
